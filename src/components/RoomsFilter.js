@@ -65,11 +65,12 @@ people = people.map((item,index) => {return <option key={index} value = {item}>{
     {/* extras */}
     <div className='form-group'>
      <div className='single-extra'>
-      <input type='checkbox' name='breakfast' id='breakfast' checked={breakfast} onChange={handleChange} />
+
+      <input type="checkbox" name="breakfast" id="breakfast" value='checkbox' onChange={handleChange} />
       <label htmlFor = 'breakfast'>breakfast</label> 
      </div>
      <div className='single-extra'>
-      <input type='checkbox' name='pets' id='pets' checked={pets} onChange={handleChange} />
+      <input type='checkbox' name='pets' id='pets' value='checkbox' checked={pets} onChange={handleChange} />
       <label htmlFor = 'pets'>pets</label> 
      </div>
     </div>

@@ -70,9 +70,9 @@ getRoom = (slug) =>{
 };
 
 handleChange = event => {
-   const target = event.target
-   const value = target.value === 'checkbox' ? target.checked : target.value
-   const name = event.target.name
+   const target = event.target; 
+   const value = target.value === 'checkbox' ? target.checked : target.value;
+   const name = event.target.name  
    this.setState({
       [name]:value
    },this.filterRooms)
@@ -100,7 +100,9 @@ filterRooms = ()=>{
    //filter by size
    tempRooms = tempRooms.filter(room => room.size>= minSize && room.size<=maxSize)
    //filter by breakfast
+   console.log(breakfast);
    if(breakfast){
+      console.log(breakfast);
       tempRooms= tempRooms.filter(room => room.breakfast ===true)
    }
    //filter by pets
